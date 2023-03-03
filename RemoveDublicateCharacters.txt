@@ -1,0 +1,21 @@
+Q. Remove dublicate Characters
+
+public class removeDublicateChar {
+
+	public static void main(String[] args) {
+		String w="javaprogramming";
+	
+		String nw ="";
+		for(int i=0;i<w.length();i++) {
+			char ch=w.charAt(i);
+			
+			if(ch!=' ') {
+				nw=nw+ch;
+				w=w.replace(ch,' ');
+			}
+		}
+		System.out.println(nw);
+		
+	}
+
+}

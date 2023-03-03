@@ -1,5 +1,4 @@
 Q. find number of characters from String and character counts.
-==>
 
 package java_PracticePrograms;
 
