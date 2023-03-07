@@ -1,0 +1,224 @@
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (feature1)
+$ git remote add origin https://github.com/aktamboli1993/Flight-Ticket.git
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (feature1)
+$ git remote
+origin
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (feature1)
+$ git remote -v
+origin  https://github.com/aktamboli1993/Flight-Ticket.git (fetch)
+origin  https://github.com/aktamboli1993/Flight-Ticket.git (push)
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (feature1)
+$ git push origin master
+remote: Permission to aktamboli1993/Flight-Ticket.git denied to Akbar2424.
+fatal: unable to access 'https://github.com/aktamboli1993/Flight-Ticket.git/': The requested URL returned error: 403
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (feature1)
+$ git commit
+On branch feature1
+nothing to commit, working tree clean
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (feature1)
+$ git config --glibal user.username aktamboli1993
+error: unknown option `glibal'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (feature1)
+$ git config --global user.username aktamboli1993
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (feature1)
+$ git checkout master
+Switched to branch 'master'
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git config --global user.username aktamboli1993
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ ls
+BuyFlightTicketOnMakeMyTrip.txt  PalindromeString.txt           Text2.txt             about.html
+CharacterCountFromString.txt     RemoveDublicateCharacters.txt  Text3.txt             contact.html
+PalindromeNumber.txt             Text1.txt                      UnwantedTextFile.txt
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Text1.txt
+        deleted:    Text2.txt
+        deleted:    Text3.txt
+        deleted:    UnwantedTextFile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git add -A
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git commit
+[master a5f4fac]  Adding new files
+ 4 files changed, 3 deletions(-)
+ delete mode 100644 Text1.txt
+ delete mode 100644 Text2.txt
+ delete mode 100644 Text3.txt
+ delete mode 100644 UnwantedTextFile.txt
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git config --global user.username aktamboli1993
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git remote add origin https://github.com/aktamboli1993/Flight-Ticket.git
+error: remote origin already exists.
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git push origin master
+remote: Permission to aktamboli1993/Flight-Ticket.git denied to Akbar2424.
+fatal: unable to access 'https://github.com/aktamboli1993/Flight-Ticket.git/': The requested URL returned error: 403
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git config --global user.username aktamboli1993
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git remote add origin https://github.com/aktamboli1993/New-Codes.git
+error: remote origin already exists.
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git push origin master
+remote: Permission to aktamboli1993/Flight-Ticket.git denied to Akbar2424.
+fatal: unable to access 'https://github.com/aktamboli1993/Flight-Ticket.git/': The requested URL returned error: 403
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git checkout aktamboli1993
+error: pathspec 'aktamboli1993' did not match any file(s) known to git
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git push -u origin master
+remote: Permission to aktamboli1993/Flight-Ticket.git denied to Akbar2424.
+fatal: unable to access 'https://github.com/aktamboli1993/Flight-Ticket.git/': The requested URL returned error: 403
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ ssh-keygen -t ed25519 -C "akbar.tamboli500@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/HP/.ssh/id_ed25519):
+Created directory '/c/Users/HP/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/HP/.ssh/id_ed25519
+Your public key has been saved in /c/Users/HP/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:ebbqhn8REMatzQ+5GZgvi3E4vzBp+NhwdTOFumXp6Yk akbar.tamboli500@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|       .oo       |
+|       .o ..     |
+|         B...    |
+|        +oBo     |
+|       .S.XB     |
+|     .+ooO==.    |
+|    o *B.o+.     |
+|     Boo++..     |
+|    . o+Eoo      |
++----[SHA256]-----+
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 974
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ ssh-add ~/.ssh/id_ed25519
+Identity added: /c/Users/HP/.ssh/id_ed25519 (akbar.tamboli500@gmail.com)
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKF2OalCGvOsNWdKc7UZcNikNmSD128cKRuheegpmIwa akbar.tamboli500@gmail.com
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git push -u origin master
+remote: Permission to aktamboli1993/Flight-Ticket.git denied to Akbar2424.
+fatal: unable to access 'https://github.com/aktamboli1993/Flight-Ticket.git/': The requested URL returned error: 403
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git remote set-url origin git@github.com:aktamboli1993/New-Codes.git
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git remote
+origin
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git remote -v
+origin  git@github.com:aktamboli1993/New-Codes.git (fetch)
+origin  git@github.com:aktamboli1993/New-Codes.git (push)
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$ git push -u origin master
+The authenticity of host 'github.com (140.82.112.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? Y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enumerating objects: 37, done.
+Counting objects: 100% (37/37), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (37/37), 4.33 KiB | 369.00 KiB/s, done.
+Total 37 (delta 11), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (11/11), done.
+To github.com:aktamboli1993/New-Codes.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+HP@DESKTOP-1R3F1SU MINGW64 ~/Desktop/Git in OneVideo (master)
+$
